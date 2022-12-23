@@ -17,7 +17,7 @@ RSpec.describe Author do
       jane_eyre = charlotte_bronte.write("Jane Eyre", "October 16, 1847") 
 
       expect(jane_eyre.class).to eq(Book)
-      #have to call books.last to pass this test, otherwise themethod
+      #have to call books.last to pass this test, otherwise the method
       #returns an array instead of the book object..
       #better to make add_book(method)? 
       expect(jane_eyre.title).to eq("Jane Eyre")
