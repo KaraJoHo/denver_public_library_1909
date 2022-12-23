@@ -82,7 +82,7 @@ RSpec.describe Library do
       expect(dpl.checkout(jane_eyre)).to eq(true)
       expect(dpl.checked_out_books).to eq([jane_eyre])
 
-      dpl.checkout(jane_eyre).to eq(false)
+      expect(dpl.checkout(jane_eyre)).to eq(false)
 
     end
   end
