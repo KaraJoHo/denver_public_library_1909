@@ -62,11 +62,18 @@ class Library
       false
     else
       @checked_out_books << book
+      book.up_checkout_count 
       true
     end
   end
 
   def return(book)
     @checked_out_books.delete(book)
+  end
+
+  def most_popular_book 
+    @books.max_by do |book| 
+      book.checkout_count
+    end
   end
 end

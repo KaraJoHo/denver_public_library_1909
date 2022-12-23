@@ -127,7 +127,7 @@ RSpec.describe Library do
 
       expect(dpl.checkout(mockingbird)).to eq(true)
 
-      #expect(dpl.most_popular_book).to eq(mockingbird)
+      expect(dpl.most_popular_book).to eq(mockingbird)
 
     end
   end
